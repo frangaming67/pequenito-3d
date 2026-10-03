@@ -2,9 +2,12 @@ node_modules/
 .tools/
 dist/
 .sites-runtime/
+.vercel/
 .env
 .env.*
 !.env.example
 *.tar.gz
 *.log
 .DS_Store
+
+.vercel

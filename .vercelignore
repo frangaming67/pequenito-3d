@@ -1,0 +1,14 @@
+.git/
+.github/
+.openai/
+.tools/
+.sites-runtime/
+.reference/
+.vercel/
+node_modules/
+dist/
+.env
+.env.*
+*.log
+*.tar.gz
+.DS_Store
