@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111716" />
+    <meta name="description" content="Un pequeño llavero con mucha personalidad. Explorá el modelo 3D, probá sus expresiones y descargalo con sus animaciones." />
+    <title>Pequeñito · Un pequeño compañero</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23111716'/%3E%3Crect x='7' y='8' width='6' height='13' rx='3' fill='%237ef7cf'/%3E%3Crect x='19' y='8' width='6' height='13' rx='3' fill='%237ef7cf'/%3E%3Cpath d='M14 23h4' stroke='%237ef7cf' stroke-width='2'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="./" class="brand" aria-label="Pequeñito, inicio"><span class="brand-icon" aria-hidden="true">p.</span>pequeñito</a>
+      <nav class="main-nav" aria-label="Navegación principal"><a href="#demo">Demo 3D</a><a href="#guia">Cómo armarlo</a></nav>
+      <a class="source-link" href="https://www.instagram.com/reel/Ddwk9uuouR9/" target="_blank" rel="noreferrer">Ver referencia <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <div class="intro" id="demo"><div><p class="eyebrow">UN COMPAÑERO DE BOLSILLO</p><h1>Hola, soy Pequeñito<span>.</span></h1></div><p>Una carita, un circuito<br>y un montón de emociones.</p></div>
+      <div class="workspace">
+        <section class="stage" aria-label="Visor del llavero en 3D">
+          <div class="stage-top"><div class="stage-label"><span class="live-dot"></span><span>VISTA EN VIVO</span><span class="divider">/</span><span>3D</span></div><button class="icon-button" id="reset-view" title="Restablecer vista" aria-label="Restablecer vista"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg></button></div>
+          <canvas id="scene" aria-label="Modelo 3D de un llavero electrónico con ojos animados. Arrastrá para girar y usá la rueda para acercar. Con teclado: flechas para girar, más y menos para zoom, Home para restablecer." tabindex="0"></canvas>
+          <div id="scene-error" class="scene-error" hidden><h2>No se pudo iniciar la vista 3D</h2><p>Probá abrir la demo en un navegador con WebGL habilitado.</p><a href="./models/pequenito.glb" download>Descargar el modelo</a></div>
+          <div class="view-buttons" role="group" aria-label="Ángulo de cámara"><button class="selected" data-view="front" aria-pressed="true">Frente</button><button data-view="side" aria-pressed="false">Perfil</button><button data-view="back" aria-pressed="false">Atrás</button></div>
+          <div class="stage-bottom"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 3v6"/></svg>Arrastrá para girar · Scroll para acercar</span><button id="snapshot" class="text-button">Guardar imagen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 7h3l2-3h4l2 3h3v13H5z"/><circle cx="12" cy="13" r="3"/></svg></button></div>
+        </section>
+        <aside class="controls" aria-label="Controles del personaje">
+          <div class="controls-heading"><span class="eyebrow">CONOCÉ A PEQUEÑITO</span><span class="version">01</span></div>
+          <h2>¿Cómo se siente?</h2><p class="control-description">16 expresiones. Deslizá para ver todas.</p>
+          <div class="expression-grid" role="group" aria-label="Expresiones">
+            <button class="expression active" data-animation="idle" aria-pressed="true"><span class="face-text" aria-hidden="true">●‿●</span><span>Original</span></button>
+            <button class="expression" data-animation="happy" aria-pressed="false"><span class="face-text" aria-hidden="true">⌒‿⌒</span><span>Feliz</span></button>
+            <button class="expression" data-animation="curious" aria-pressed="false"><span class="face-text" aria-hidden="true">●.◕</span><span>Curioso</span></button>
+            <button class="expression" data-animation="blink" aria-pressed="false"><span class="face-text" aria-hidden="true">−‿●</span><span>Guiño</span></button>
+            <button class="expression" data-animation="sleepy" aria-pressed="false"><span class="face-text" aria-hidden="true">−.−</span><span>Dormilón</span></button>
+            <button class="expression" data-animation="love" aria-pressed="false"><span class="face-text" aria-hidden="true">♥‿♥</span><span>Enamorado</span></button>
+            <button class="expression" data-animation="dizzy" aria-pressed="false"><span class="face-text" aria-hidden="true">×.×</span><span>Mareado</span></button>
+            <button class="expression" data-animation="excited" aria-pressed="false"><span class="face-text" aria-hidden="true">●o●</span><span>Emocionado</span></button>
+            <button class="expression" data-animation="angry" aria-pressed="false"><span class="face-text" aria-hidden="true">&gt;_&lt;</span><span>Enojado</span></button>
+            <button class="expression" data-animation="sad" aria-pressed="false"><span class="face-text" aria-hidden="true">╥.╥</span><span>Triste</span></button>
+            <button class="expression" data-animation="surprised" aria-pressed="false"><span class="face-text" aria-hidden="true">⊙o⊙</span><span>Sorprendido</span></button>
+            <button class="expression" data-animation="shy" aria-pressed="false"><span class="face-text" aria-hidden="true">˶ᴗ˶</span><span>Tímido</span></button>
+            <button class="expression" data-animation="scared" aria-pressed="false"><span class="face-text" aria-hidden="true">O.O</span><span>Asustado</span></button>
+            <button class="expression" data-animation="confused" aria-pressed="false"><span class="face-text" aria-hidden="true">•?•</span><span>Confundido</span></button>
+            <button class="expression" data-animation="laugh" aria-pressed="false"><span class="face-text" aria-hidden="true">&gt;ᴗ&lt;</span><span>Risueño</span></button>
+            <button class="expression" data-animation="focused" aria-pressed="false"><span class="face-text" aria-hidden="true">⌐_⌐</span><span>Concentrado</span></button>
+          </div>
+          <div class="playback-section"><div class="section-heading"><span>REPRODUCCIÓN</span><button id="pause" class="pause-button" aria-label="Pausar animación"><span id="play-icon">Ⅱ</span><span id="play-label">Pausar</span></button></div><div class="timeline"><div id="progress"></div></div><div class="timeline-labels"><span id="active-label">Original</span><span id="time-label">0.0 / 8.0 s</span></div><label class="speed-label" for="speed">Velocidad <output id="speed-value" for="speed">1×</output></label><input id="speed" type="range" min="0.25" max="2" value="1" step="0.25" aria-label="Velocidad de animación"/><div class="range-labels"><span>Tranquilo</span><span>Con energía</span></div></div>
+          <div class="appearance-section"><span class="section-heading">ESCENARIO</span><div class="environment-options" role="group" aria-label="Escenario"><button class="environment selected" data-environment="studio" aria-pressed="true"><span class="swatch studio"></span>Estudio</button><button class="environment" data-environment="night" aria-pressed="false"><span class="swatch night"></span>Noche</button><button class="environment" data-environment="light" aria-pressed="false"><span class="swatch light"></span>Claro</button></div></div>
+          <a class="download-button" id="download-model" href="./models/pequenito.glb" download="pequenito.glb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg>Descargar modelo 3D</a><p class="download-caption">GLB · incluye las 16 animaciones</p>
+        </aside>
+      </div>
+      <footer><span>Diseñado para sacarte una sonrisa.</span><span>Reconstrucción 3D a partir del video de referencia.</span><span class="footer-signature">hecho de pequeños detalles <span>✳</span></span></footer>
+    </main>
+    <div id="toast" role="status" class="toast" hidden></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

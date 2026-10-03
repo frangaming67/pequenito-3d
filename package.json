@@ -1,0 +1,22 @@
+{
+  "name": "pequenito-3d",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "node scripts/package-kit.mjs && vite build",
+    "package:kit": "node scripts/package-kit.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "export:model": "node scripts/export-model.mjs",
+    "check:model": "node scripts/check-model.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "fflate": "^0.8.3",
+    "gltf-validator": "^2.0.0-dev.3.10",
+    "vite": "^7.1.0"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Pequeñito",
+  "file": "pequenito.glb",
+  "format": "glTF 2.0 binary",
+  "byteLength": 2404340,
+  "meshes": 174,
+  "triangles": 23456,
+  "bounds": {
+    "min": [
+      -1.100000023841858,
+      -1.223000000026077,
+      -0.2455000000130385
+    ],
+    "max": [
+      1.1559999999403954,
+      4.4337687492370605,
+      0.27550000001303854
+    ],
+    "size": [
+      2.2560000237822533,
+      5.656768749263137,
+      0.521000000026077
+    ]
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "durationSeconds": 8
+    },
+    {
+      "name": "blink",
+      "durationSeconds": 2.4
+    },
+    {
+      "name": "happy",
+      "durationSeconds": 3.2
+    },
+    {
+      "name": "curious",
+      "durationSeconds": 4
+    },
+    {
+      "name": "sleepy",
+      "durationSeconds": 4
+    },
+    {
+      "name": "love",
+      "durationSeconds": 2.8
+    },
+    {
+      "name": "dizzy",
+      "durationSeconds": 3.6
+    },
+    {
+      "name": "excited",
+      "durationSeconds": 2.4
+    },
+    {
+      "name": "angry",
+      "durationSeconds": 3.2
+    },
+    {
+      "name": "sad",
+      "durationSeconds": 4
+    },
+    {
+      "name": "surprised",
+      "durationSeconds": 2.8
+    },
+    {
+      "name": "shy",
+      "durationSeconds": 4.2
+    },
+    {
+      "name": "scared",
+      "durationSeconds": 3
+    },
+    {
+      "name": "confused",
+      "durationSeconds": 4
+    },
+    {
+      "name": "laugh",
+      "durationSeconds": 2.6
+    },
+    {
+      "name": "focused",
+      "durationSeconds": 4
+    }
+  ]
+}
