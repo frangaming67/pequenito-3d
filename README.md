@@ -4,7 +4,7 @@ Un llavero electrónico recreado en 3D a partir del video de referencia: carcasa
 
 ## Demo
 
-Demo privada: [Abrir Pequeñito](https://pequenito-3d-fran.panchobasigalupdomin.chatgpt.site). Requiere acceso con la cuenta propietaria.
+Demo en vivo: [pequenito-3d.vercel.app](https://pequenito-3d.vercel.app).
 
 ## Modelo 3D
 
